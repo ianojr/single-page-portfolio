@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.margins {
+    height: 10px;
+    width: 100%;
+    background-color: #fca311;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    background-color: #14213d;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 5px rgb(0, 0, 0);
+}
+
+.header .logo h1 {
+    font-size: 3rem;
+    color: #fca311;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+.header ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.banner {
+    width: 100%;
+    padding: 40px;
+    background: #e5e5e5;
+}
+
+.banner .row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 50%;
+    height: 100%;
+}
+
+.col h1 {
+    color: #14213d;
+    font-size: 4rem;
+}
+
+.col p {
+    font-size: 1.5rem;
+    padding-top: 4%;
+}
+
+.col button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 2px #fca311;
+    color: #fca311;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.col button:hover {
+    color: white;
+    background: #fca311;
+    transition: 0.5s;
+}
+
+.col img {
+    width: 80%;
+}
+
+.myself {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.myself div h1 {
+    color: #14213d;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.myself div p {
+    color: #1c2333;
+}
+
+.testimonials {
+    margin: 40px 0;
+    width: 100%;
+}
+.testimonials h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #14213d;
+    font-weight: lighter;
+}
+
+.testimonials .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.testimonials .cards .card {
+    width: 30%;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15),
+        -10px -10px 20px rgba(255, 255, 255, 1);
+        border-radius: 10px;
+}
+
+.pfp img {
+    width: 90%;
+    border-radius: 10px;
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #14213d;
+    color: #fca311;
+    padding: 40px 0;
+}
+.footer .social{
+    display: flex;
+    padding-right: 20px;
+    text-align: center;
+}
+.footer .socials{
+    border: solid 1px #fca311;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin:20px 10px;
+}
+
+
+
+
+.about_content{
+    display: none;
+    text-align: center;
+    padding-top: 50px;
+}
+.about_content h1{
+    font-size: 4rem;
+    color: #14213d;
+    font-weight: lighter;
+}
+.about_content p{
+    font-size: 1.5rem;
+    padding: 40px;
+}
+.download_cv{
+    width: 90%;
+    padding: 5px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: solid 2px #fca311;
+    color: #fca311;
+    cursor: pointer;
+}
+.download_cv:hover {
+    color: white;
+    background: #fca311;
+    transition: 0.5s;
+}
+.education_content{
+    display: none;
+}
+.contact_content{
+    display: none;
+}
+.contact_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact_data label{
+    font-size: 20px;
+}
+.contact_data input{
+    width: 40%;
+    padding: 10px 10px;
+    margin: 20px 0;
+}
+#submit{
+    margin-top: 30px;
+    width: 20%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header ul li {
+        line-height: 30px;
+    }
+
+    .banner .row {
+        display: block;
+        width: 100%;
+    }
+
+    .row .col {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .col img {
+        width: 100%;
+    }
+
+    .myself {
+        display: block;
+        text-align: center;
+    }
+
+    .myself div {
+        padding: 30px 0;
+    }
+    .testimonials .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .testimonials .cards .card{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .about_content h1{
+        font-size: 2rem;
+    }
+    .contact_data input{
+        width: 90%;
+    }
+}
