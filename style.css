@@ -238,6 +238,7 @@
         align-items: start;
     }
 
+
     .header ul {
         display: flex;
         flex-direction: column;
@@ -246,6 +247,9 @@
 
     .header ul li {
         line-height: 30px;
+    }
+    .logo h1{
+        font-size: 2rem;
     }
 
     .banner .row {
